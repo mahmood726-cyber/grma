@@ -1,0 +1,9 @@
+parameter,default,meaning
+zeta,0.5,Grey resolution coefficient in GRC denominator
+norm_method,robust_minmax,"Fitted robust scaling to [0,1]"
+anchor_mode,median,Effect anchor uses median(y)
+trim,0.1,Trim fraction if anchor_mode=trimmed_mean
+prec_cap,1e6,Upper cap on precision before log transform
+effect_guard,True,Apply Tukey bisquare guard
+tukey_c,4.685,Bisquare tuning constant
+guard_power,1,Exponent on guard term

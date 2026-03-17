@@ -1,0 +1,151 @@
+"scenario","method","bias","rmse","convergence_rate","type","name","k","tau2"
+"B1","GRMA",0.00798109221948809,0.194566144868453,1,"baseline","Null effect, small k",5,0.05
+"B1","GRMA_noguard",0.00607955918152819,0.166076605797027,1,"baseline","Null effect, small k",5,0.05
+"B1","HKSJ",0.00538762690223262,0.159108488083504,1,"baseline","Null effect, small k",5,0.05
+"B1","RBM",0.00749569509116288,0.237145302084291,1,"baseline","Null effect, small k",5,0.05
+"B1","REML",0.00538762690223262,0.159108488083504,1,"baseline","Null effect, small k",5,0.05
+"B1","WRD",0.00599719521555433,0.179989905269682,1,"baseline","Null effect, small k",5,0.05
+"B2","GRMA",0.00574301367667334,0.134421016174817,1,"baseline","Standard, medium k",10,0.05
+"B2","GRMA_noguard",0.00630859404836925,0.119615331834349,1,"baseline","Standard, medium k",10,0.05
+"B2","HKSJ",0.00372437830491697,0.115557710501237,1,"baseline","Standard, medium k",10,0.05
+"B2","RBM",0.013919071009586,0.19998768616944,1,"baseline","Standard, medium k",10,0.05
+"B2","REML",0.00372437830491697,0.115557710501237,1,"baseline","Standard, medium k",10,0.05
+"B2","WRD",0.00845820164397399,0.130656280224232,1,"baseline","Standard, medium k",10,0.05
+"B3","GRMA",0.00377116757496509,0.0931703494748394,1,"baseline","Standard, large k",20,0.05
+"B3","GRMA_noguard",0.00185681891347677,0.0852934368998317,1,"baseline","Standard, large k",20,0.05
+"B3","HKSJ",0.000731458738801774,0.0814382927456543,1,"baseline","Standard, large k",20,0.05
+"B3","RBM",0.00554658499780961,0.148975381185222,1,"baseline","Standard, large k",20,0.05
+"B3","REML",0.000731458738801774,0.0814382927456543,1,"baseline","Standard, large k",20,0.05
+"B3","WRD",0.00235085486330586,0.0935736300374573,1,"baseline","Standard, large k",20,0.05
+"B4","GRMA",0.000524141876615033,0.0589387054157699,1,"baseline","Large k",50,0.05
+"B4","GRMA_noguard",0.000809970177924205,0.0528126072784328,1,"baseline","Large k",50,0.05
+"B4","HKSJ",0.000288880219343148,0.0499368888141333,1,"baseline","Large k",50,0.05
+"B4","RBM",0.0022988616687241,0.104776567963509,1,"baseline","Large k",50,0.05
+"B4","REML",0.000288880219343148,0.0499368888141333,1,"baseline","Large k",50,0.05
+"B4","WRD",0.00132340432906326,0.0577772432215232,1,"baseline","Large k",50,0.05
+"B5","GRMA",0.00127684839737845,0.0410803738709221,1,"baseline","Very large k",100,0.05
+"B5","GRMA_noguard",0.00106768042385491,0.0374355197818069,1,"baseline","Very large k",100,0.05
+"B5","HKSJ",0.000809568070189616,0.0346763092213799,1,"baseline","Very large k",100,0.05
+"B5","RBM",0.00212441604593296,0.0784551514438928,1,"baseline","Very large k",100,0.05
+"B5","REML",0.000809568070189616,0.0346763092213799,1,"baseline","Very large k",100,0.05
+"B5","WRD",0.00121439376017124,0.0415085726886069,1,"baseline","Very large k",100,0.05
+"D1","GRMA",-0.00250612578675362,0.147035681025347,1,"distribution","Heavy-tailed effects",10,0.05
+"D1","GRMA_noguard",-0.00261096820008189,0.142204938063533,1,"distribution","Heavy-tailed effects",10,0.05
+"D1","HKSJ",-0.0028452135309273,0.147047939249346,1,"distribution","Heavy-tailed effects",10,0.05
+"D1","RBM",-0.00197151968344743,0.204369126707624,1,"distribution","Heavy-tailed effects",10,0.05
+"D1","REML",-0.0028452135309273,0.147047939249346,1,"distribution","Heavy-tailed effects",10,0.05
+"D1","WRD",-0.000442410027060626,0.146718710482216,1,"distribution","Heavy-tailed effects",10,0.05
+"D2","GRMA",-0.0102551601548979,0.134573551130222,1,"distribution","Skewed effects",10,0.05
+"D2","GRMA_noguard",-0.00238847437330687,0.119532229374124,1,"distribution","Skewed effects",10,0.05
+"D2","HKSJ",-0.00112116982849546,0.113574203781945,1,"distribution","Skewed effects",10,0.05
+"D2","RBM",-0.00899506007770535,0.197933645458277,1,"distribution","Skewed effects",10,0.05
+"D2","REML",-0.00112116982849546,0.113574203781945,1,"distribution","Skewed effects",10,0.05
+"D2","WRD",-0.00241394679582918,0.131814329036856,1,"distribution","Skewed effects",10,0.05
+"H1","GRMA",0.000927823182743688,0.0918286987902712,1,"heterogeneity","No heterogeneity",10,0
+"H1","GRMA_noguard",0.000168338982755896,0.0902603559488202,1,"heterogeneity","No heterogeneity",10,0
+"H1","HKSJ",0.00229901289278691,0.0765056566666193,1,"heterogeneity","No heterogeneity",10,0
+"H1","RBM",-0.00196549888699554,0.162996281046681,1,"heterogeneity","No heterogeneity",10,0
+"H1","REML",0.00229901289278691,0.0765056566666193,1,"heterogeneity","No heterogeneity",10,0
+"H1","WRD",-0.00105866455171177,0.109143214332167,1,"heterogeneity","No heterogeneity",10,0
+"H2","GRMA",0.00284441167438159,0.155515503605054,1,"heterogeneity","Moderate heterogeneity",10,0.1
+"H2","GRMA_noguard",0.000737283419898977,0.137659184453154,1,"heterogeneity","Moderate heterogeneity",10,0.1
+"H2","HKSJ",0.000765564833734533,0.134497157988115,1,"heterogeneity","Moderate heterogeneity",10,0.1
+"H2","RBM",0.00443781669359602,0.217446547740315,1,"heterogeneity","Moderate heterogeneity",10,0.1
+"H2","REML",0.000765564833734533,0.134497157988115,1,"heterogeneity","Moderate heterogeneity",10,0.1
+"H2","WRD",0.000253903859642186,0.145802634508245,1,"heterogeneity","Moderate heterogeneity",10,0.1
+"H3","GRMA",-0.0042332575585373,0.19842121902045,1,"heterogeneity","High heterogeneity",10,0.2
+"H3","GRMA_noguard",-0.00370313565753631,0.171740887733424,1,"heterogeneity","High heterogeneity",10,0.2
+"H3","HKSJ",-0.00468418627504964,0.169196320445309,1,"heterogeneity","High heterogeneity",10,0.2
+"H3","RBM",-0.00682389801963839,0.259441825382614,1,"heterogeneity","High heterogeneity",10,0.2
+"H3","REML",-0.00468418627504964,0.169196320445309,1,"heterogeneity","High heterogeneity",10,0.2
+"H3","WRD",-0.00375525839338771,0.175833043413528,1,"heterogeneity","High heterogeneity",10,0.2
+"H4","GRMA",0.00725164072690815,0.285180710231142,1,"heterogeneity","Very high heterogeneity",10,0.5
+"H4","GRMA_noguard",0.00271298459845822,0.250794169878109,1,"heterogeneity","Very high heterogeneity",10,0.5
+"H4","HKSJ",0.00181555016871574,0.245870280978933,1,"heterogeneity","Very high heterogeneity",10,0.5
+"H4","RBM",0.00610739558299707,0.356462233827912,1,"heterogeneity","Very high heterogeneity",10,0.5
+"H4","REML",0.00181555016871574,0.245870280978933,1,"heterogeneity","Very high heterogeneity",10,0.5
+"H4","WRD",0.00458764440592846,0.250742226527231,1,"heterogeneity","Very high heterogeneity",10,0.5
+"H5","GRMA",-0.00281267175522302,0.393910965897315,1,"heterogeneity","Extreme heterogeneity",10,1
+"H5","GRMA_noguard",-0.000930429988689695,0.342805198261622,1,"heterogeneity","Extreme heterogeneity",10,1
+"H5","HKSJ",-3.07513741087819e-05,0.337118900537851,1,"heterogeneity","Extreme heterogeneity",10,1
+"H5","RBM",-0.00389662924208483,0.485327550800651,1,"heterogeneity","Extreme heterogeneity",10,1
+"H5","REML",-3.07513741087819e-05,0.337118900537851,1,"heterogeneity","Extreme heterogeneity",10,1
+"H5","WRD",0.00185889881055105,0.341535624687932,1,"heterogeneity","Extreme heterogeneity",10,1
+"O1","GRMA",0.0437339860416132,0.144459325891663,1,"outlier","Single mild outlier",10,0.05
+"O1","GRMA_noguard",0.0628136302312561,0.135623729764249,1,"outlier","Single mild outlier",10,0.05
+"O1","HKSJ",0.067755175527865,0.135651830366443,1,"outlier","Single mild outlier",10,0.05
+"O1","RBM",0.0525055706619023,0.201886424876151,1,"outlier","Single mild outlier",10,0.05
+"O1","REML",0.067755175527865,0.135651830366443,1,"outlier","Single mild outlier",10,0.05
+"O1","WRD",0.0605669875508952,0.144581994181062,1,"outlier","Single mild outlier",10,0.05
+"O2","GRMA",0.0364358373950209,0.145050355958478,1,"outlier","Single extreme outlier",10,0.05
+"O2","GRMA_noguard",0.0927698777568429,0.151951980775,1,"outlier","Single extreme outlier",10,0.05
+"O2","HKSJ",0.107170681021373,0.160750076525849,1,"outlier","Single extreme outlier",10,0.05
+"O2","RBM",0.0580545155902379,0.198743790692111,1,"outlier","Single extreme outlier",10,0.05
+"O2","REML",0.107170681021373,0.160750076525849,1,"outlier","Single extreme outlier",10,0.05
+"O2","WRD",0.0796996680310846,0.153370133786784,1,"outlier","Single extreme outlier",10,0.05
+"O3","GRMA",0.002469939262487,0.143285400808709,1,"outlier","Two opposing outliers",10,0.05
+"O3","GRMA_noguard",0.00263393876172809,0.12002021156493,1,"outlier","Two opposing outliers",10,0.05
+"O3","HKSJ",0.00225870359273435,0.117505175844118,1,"outlier","Two opposing outliers",10,0.05
+"O3","RBM",0.00219233230214612,0.200949686800141,1,"outlier","Two opposing outliers",10,0.05
+"O3","REML",0.00225870359273435,0.117505175844118,1,"outlier","Two opposing outliers",10,0.05
+"O3","WRD",0.00313831554451229,0.131223814468305,1,"outlier","Two opposing outliers",10,0.05
+"O4","GRMA",0.0952187991233221,0.153397041720418,1,"outlier","Multiple outliers",15,0.05
+"O4","GRMA_noguard",0.123072356939096,0.157283468332983,1,"outlier","Multiple outliers",15,0.05
+"O4","HKSJ",0.132034214001413,0.162369839937276,1,"outlier","Multiple outliers",15,0.05
+"O4","RBM",0.0958734653790593,0.202715913352173,1,"outlier","Multiple outliers",15,0.05
+"O4","REML",0.132034214001413,0.162369839937276,1,"outlier","Multiple outliers",15,0.05
+"O4","WRD",0.121516301788558,0.161031662125689,1,"outlier","Multiple outliers",15,0.05
+"O5","GRMA",0.0456595186763043,0.142526962515005,1,"outlier","Clustered outliers",10,0.05
+"O5","GRMA_noguard",0.0803743223657154,0.141699974429177,1,"outlier","Clustered outliers",10,0.05
+"O5","HKSJ",0.0893089006519061,0.145922645442948,1,"outlier","Clustered outliers",10,0.05
+"O5","RBM",0.0541152736707727,0.198646096538112,1,"outlier","Clustered outliers",10,0.05
+"O5","REML",0.0893089006519061,0.145922645442948,1,"outlier","Clustered outliers",10,0.05
+"O5","WRD",0.0712078228728164,0.147499053214404,1,"outlier","Clustered outliers",10,0.05
+"PB1","GRMA",0.216460200858275,0.24133079541126,1,"pub_bias","Mild pub bias (p<0.10)",20,0.05
+"PB1","GRMA_noguard",0.192954884500743,0.224611577578386,1,"pub_bias","Mild pub bias (p<0.10)",20,0.05
+"PB1","HKSJ",0.157867773732797,0.193092889867679,1,"pub_bias","Mild pub bias (p<0.10)",20,0.05
+"PB1","RBM",0.268090382606167,0.309526854767734,1,"pub_bias","Mild pub bias (p<0.10)",20,0.05
+"PB1","REML",0.157867773732797,0.193092889867679,1,"pub_bias","Mild pub bias (p<0.10)",20,0.05
+"PB1","WRD",0.226471286616879,0.264241433588475,1,"pub_bias","Mild pub bias (p<0.10)",20,0.05
+"PB2","GRMA",0.219900433695585,0.244437875268208,1,"pub_bias","Moderate pub bias (p<0.05)",20,0.05
+"PB2","GRMA_noguard",0.19755292993175,0.229116968420136,1,"pub_bias","Moderate pub bias (p<0.05)",20,0.05
+"PB2","HKSJ",0.160444030520931,0.194406446794504,1,"pub_bias","Moderate pub bias (p<0.05)",20,0.05
+"PB2","RBM",0.273608879323829,0.31677093688522,1,"pub_bias","Moderate pub bias (p<0.05)",20,0.05
+"PB2","REML",0.160444030520931,0.194406446794504,1,"pub_bias","Moderate pub bias (p<0.05)",20,0.05
+"PB2","WRD",0.231497211418308,0.269087841549651,1,"pub_bias","Moderate pub bias (p<0.05)",20,0.05
+"PB3","GRMA",0.223622769586641,0.247826932193364,1,"pub_bias","Strong pub bias (p<0.01)",20,0.05
+"PB3","GRMA_noguard",0.200410493669856,0.23103502584804,1,"pub_bias","Strong pub bias (p<0.01)",20,0.05
+"PB3","HKSJ",0.162024868939888,0.195850157554386,1,"pub_bias","Strong pub bias (p<0.01)",20,0.05
+"PB3","RBM",0.276381300509135,0.317237971571183,1,"pub_bias","Strong pub bias (p<0.01)",20,0.05
+"PB3","REML",0.162024868939888,0.195850157554386,1,"pub_bias","Strong pub bias (p<0.01)",20,0.05
+"PB3","WRD",0.235053348399526,0.271441458310042,1,"pub_bias","Strong pub bias (p<0.01)",20,0.05
+"PB4","GRMA",0.307146573805441,0.340172082978748,1,"pub_bias","Classic step function",20,0.05
+"PB4","GRMA_noguard",0.29772085722482,0.330372004160487,1,"pub_bias","Classic step function",20,0.05
+"PB4","HKSJ",0.257480437822314,0.296045745115478,1,"pub_bias","Classic step function",20,0.05
+"PB4","RBM",0.368162778846972,0.421060380254711,1,"pub_bias","Classic step function",20,0.05
+"PB4","REML",0.257480437822314,0.296045745115478,1,"pub_bias","Classic step function",20,0.05
+"PB4","WRD",0.33035211706724,0.370976076707486,1,"pub_bias","Classic step function",20,0.05
+"PB5","GRMA",0.00200139669914737,0.0904990323281193,1,"pub_bias","Continuous weight function",20,0.05
+"PB5","GRMA_noguard",0.00132991717022432,0.0820362515339662,1,"pub_bias","Continuous weight function",20,0.05
+"PB5","HKSJ",0.00112552352093374,0.0786769629386228,1,"pub_bias","Continuous weight function",20,0.05
+"PB5","RBM",0.000732316406449999,0.147408024802469,1,"pub_bias","Continuous weight function",20,0.05
+"PB5","REML",0.00112552352093374,0.0786769629386228,1,"pub_bias","Continuous weight function",20,0.05
+"PB5","WRD",0.00160731460753973,0.0903836955440659,1,"pub_bias","Continuous weight function",20,0.05
+"S1","GRMA",0.0035342943392771,0.146030573003453,1,"small_study","Very small studies",10,0.05
+"S1","GRMA_noguard",0.00213203448449373,0.126780893417835,1,"small_study","Very small studies",10,0.05
+"S1","HKSJ",0.00169871031249552,0.124547089182951,1,"small_study","Very small studies",10,0.05
+"S1","RBM",0.00493811098641963,0.182014200221831,1,"small_study","Very small studies",10,0.05
+"S1","REML",0.00169871031249552,0.124547089182951,1,"small_study","Very small studies",10,0.05
+"S1","WRD",0.00210655406285265,0.126913637708682,1,"small_study","Very small studies",10,0.05
+"S2","GRMA",-0.00419204744968224,0.120954368589983,1,"small_study","Small studies",10,0.05
+"S2","GRMA_noguard",-0.00448306084838563,0.107024696657311,1,"small_study","Small studies",10,0.05
+"S2","HKSJ",-0.00402276003808368,0.10565463639418,1,"small_study","Small studies",10,0.05
+"S2","RBM",-0.000943160872159955,0.147365775901486,1,"small_study","Small studies",10,0.05
+"S2","REML",-0.00402276003808368,0.10565463639418,1,"small_study","Small studies",10,0.05
+"S2","WRD",-0.00367768200683507,0.106578840752775,1,"small_study","Small studies",10,0.05
+"S3","GRMA",-0.000308051480732046,0.116216121375407,1,"small_study","Mixed study sizes",10,0.05
+"S3","GRMA_noguard",-0.000915877252598648,0.104730092546581,1,"small_study","Mixed study sizes",10,0.05
+"S3","HKSJ",-0.00111048819451874,0.100744818123607,1,"small_study","Mixed study sizes",10,0.05
+"S3","RBM",0.00134062553053959,0.199307825854696,1,"small_study","Mixed study sizes",10,0.05
+"S3","REML",-0.00111048819451874,0.100744818123607,1,"small_study","Mixed study sizes",10,0.05
+"S3","WRD",-0.00259072420454922,0.126369076996834,1,"small_study","Mixed study sizes",10,0.05

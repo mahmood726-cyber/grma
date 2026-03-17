@@ -1,0 +1,10 @@
+manuscript_item,script,output_csv,note
+"Table 1 (Bias/RMSE, R sim)",run_grma_simulation.R,Table_bias_rmse_v8.csv,Definitive: 2000 reps x 25 scenarios
+"Table 1 (Bias/RMSE, Python verification)",reproduce_all_v8.py,Table_bias_rmse_v8_py.csv,Verification: 250 reps x 4 scenarios
+"Table 2 (Coverage, R sim)",run_grma_simulation.R,Table_coverage_v8.csv,Definitive: 2000 reps x 25 scenarios
+Table 3 (Applied results),applied_examples.R,Table_applied_v8.csv,R (authoritative); Table_applied_v8_py.csv (Python)
+Table 4 (Diagnostics),applied_examples.R,Table_diagnostics_v8.csv,R (authoritative)
+Table 5 (LOO summary),applied_examples.R,Table_loo_v8.csv,R (authoritative)
+Table S1 (Zeta sensitivity),applied_examples.R,Table_zeta_sensitivity_bcg_v8.csv,R (authoritative)
+Table S2 (Guard ablation),run_grma_simulation.R,Table_ablation_v8.csv,Definitive: derived from simulation
+Table S0 (Defaults),reproduce_all_v8.py,Table_defaults_v8.csv,Static table

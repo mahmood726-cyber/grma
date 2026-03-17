@@ -1,0 +1,16 @@
+# R Session Info for GRMA Paper Reproducibility
+# Generated: 2026-02-15
+# Platform: Windows 11 Pro 10.0.26100
+
+R version: 4.5.2 (2025-10-31 ucrt)
+
+Required R packages:
+  metafor    4.8-0    (meta-analysis framework; used for fallback, escalc, comparators)
+  data.table 1.18.0   (simulation results aggregation)
+
+Install with:
+  install.packages(c("metafor", "data.table"))
+
+Note: The simulation (run_grma_simulation.R) also requires the Pairwise70
+Comprehensive_Testing_Framework. Set PAIRWISE70_SIM environment variable
+to the simulation directory path, or contact the corresponding author.

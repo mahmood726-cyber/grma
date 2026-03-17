@@ -1,0 +1,12 @@
+# Requires Python >= 3.10 (tested on 3.13.1)
+
+## Core (required for GRMA estimator: grey_meta_v8.py)
+numpy==2.2.3
+scipy==1.15.2
+
+## Figures (required for generate_figures.py)
+matplotlib==3.10.0
+
+## Benchmark (required for run_pairwise70_benchmark.py only)
+pandas==2.2.3
+pyreadr==0.5.2

@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+*.rds
+*.RDS
+dev_*.py
+dev_*.R
+*.bak
+*.docx
+CLAUDE.md
+.serena/

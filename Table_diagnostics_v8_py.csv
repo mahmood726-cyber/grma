@@ -1,0 +1,3 @@
+dataset,k,anchor_y,anchor_p,zeta,w_max,n_eff,valley_flag,valley_p
+BCG (log RR),13,-0.551987,252.4328,0.5,0.1359819,10.562,False,0.962
+Morris (SMD change diff),8,0.92,14.28571,0.5,0.1911951,7.423,False,1
