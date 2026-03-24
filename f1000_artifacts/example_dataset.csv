@@ -1,0 +1,5 @@
+dataset,review_id,analysis_name,k,mu_re,se_re,mu_grma,se_grma,lambda_proxy,mu_gwam_proxy,se_gwam_proxy
+CD000028_pub4_data,CD000028,All-cause mortality,13,-0.115254,0.042454,-0.058390,0.062582,0.797178,-0.091878,0.033843
+CD000028_pub4_data,CD000028,Cause of cardiovascular mortality - Fatal CHD,10,-0.256433,0.079804,-0.280401,0.086977,0.797178,-0.204422,0.063618
+CD000028_pub4_data,CD000028,Cause of cardiovascular mortality - Fatal stroke,11,-0.400428,0.112162,-0.375533,0.111310,0.797178,-0.319212,0.089413
+CD000028_pub4_data,CD000028,Cardiovascular mortality and morbidity,15,-0.383719,0.054694,-0.362681,0.030717,0.797178,-0.305892,0.043601
