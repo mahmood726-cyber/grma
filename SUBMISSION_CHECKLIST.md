@@ -12,8 +12,8 @@
 
 | Placeholder | Location (line) | Action |
 |---|---|---|
-| `[CORRESPONDING_EMAIL_PLACEHOLDER]` | Line 7 | Replace with your real email address |
-| `[ORCID_PLACEHOLDER]` | Line 9 | Replace with your ORCID iD (format: 0000-0000-0000-0000) |
+| `mahmood.ahmad2@nhs.net` | Line 7 | Replace with your real email address |
+| `0009-0003-7781-4478` | Line 9 | Replace with your ORCID iD (format: 0000-0000-0000-0000) |
 | `[ZENODO_DOI_PLACEHOLDER]` | Line 401 | Replace with Zenodo DOI after depositing the reproducibility capsule |
 
 ### 2. Zenodo Deposit
@@ -21,10 +21,10 @@
 1. Create a new Zenodo deposit (or link via GitHub release)
 2. Upload the full reproducibility capsule (all files listed in the manuscript's Supporting Information)
 3. Set license to MIT
-4. Set author to "Mahmood Ul Hassan" (sole author, matching manuscript)
+4. Set author to "Mahmood Ahmad" (sole author, matching manuscript)
 5. Copy the minted DOI and paste into the manuscript at `[ZENODO_DOI_PLACEHOLDER]`
 
-**Note:** The existing `.zenodo.json` was created for the F1000 submission and lists 5 creators with a different name format ("Ahmad, Mahmood"). For the PLOS ONE submission, the Zenodo deposit should list the sole author as "Mahmood Ul Hassan" to match the manuscript. Either update `.zenodo.json` or configure the deposit manually.
+**Note:** The existing `.zenodo.json` was created for the F1000 submission and lists 5 creators with a different name format ("Ahmad, Mahmood"). For the PLOS ONE submission, the Zenodo deposit should list the sole author as "Mahmood Ahmad" to match the manuscript. Either update `.zenodo.json` or configure the deposit manually.
 
 ### 3. Update README Citation
 
@@ -88,6 +88,6 @@ In `README.md` line 90, the citation says `[DOI to be added upon publication]`. 
 
 1. **data.table version discrepancy**: Manuscript line 193 says `data.table 1.16.4` but `R_session_info.txt` says `data.table 1.18.0`. Verify which version was actually used during the simulation run and reconcile if needed.
 
-2. **`.zenodo.json` author mismatch**: The `.zenodo.json` file (untracked) was created for F1000 and lists 5 creators with "Ahmad, Mahmood" as first author. For the PLOS ONE GRMA paper (sole author "Mahmood Ul Hassan"), either update this file or configure Zenodo manually.
+2. **`.zenodo.json` author mismatch**: The `.zenodo.json` file (untracked) was created for F1000 and lists 5 creators with "Ahmad, Mahmood" as first author. For the PLOS ONE GRMA paper (sole author "Mahmood Ahmad"), either update this file or configure Zenodo manually.
 
 3. **F1000 files (untracked)**: Several F1000-related files are untracked in git (`F1000_Concrete_Submission_Fixes.md`, `F1000_MultiPersona_Review.md`, `F1000_Reviewer_Rerun_Manifest.md`, `f1000_artifacts/`). These are separate from the PLOS ONE submission and can remain untracked.

@@ -1,12 +1,12 @@
 # Grey Relational Meta-Analysis: A Robust Pooling Method with Redescending Effect Guard
 
-**Authors:** Mahmood Ul Hassan^1^
+**Authors:** Mahmood Ahmad^1^
 
 ^1^ Independent Researcher
 
-**Corresponding author:** Mahmood Ul Hassan ([CORRESPONDING_EMAIL_PLACEHOLDER])
+**Corresponding author:** Mahmood Ahmad (mahmood.ahmad2@nhs.net)
 
-**ORCID:** [ORCID_PLACEHOLDER]
+**ORCID:** 0009-0003-7781-4478
 
 ---
 
@@ -408,7 +408,7 @@ This study analyzed only published aggregate data from existing meta-analyses an
 
 ## Author contributions
 
-**Mahmood Ul Hassan:** Conceptualization, Methodology, Software, Validation, Formal analysis, Investigation, Data curation, Writing -- original draft, Writing -- review & editing, Visualization, Project administration.
+**Mahmood Ahmad:** Conceptualization, Methodology, Software, Validation, Formal analysis, Investigation, Data curation, Writing -- original draft, Writing -- review & editing, Visualization, Project administration.
 
 ## Funding
 
