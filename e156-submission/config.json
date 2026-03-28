@@ -1,0 +1,57 @@
+{
+  "title": "Grey Relational Meta-Analysis: A Robust Pooling Method with Redescending Effect Guard",
+  "slug": "grma-grey-relational-meta-analysis",
+  "author": "Mahmood Ahmad",
+  "date": "2026-03-26",
+  "path": "C:\\Models\\GRMA_paper",
+  "type": "methods",
+  "primary_estimand": "Bias reduction (percent)",
+  "summary": "A robust meta-analytic pooling estimator using grey relational similarity and a Tukey bisquare effect guard, evaluated on 4,572 Cochrane meta-analyses.",
+  "body": "Can grey relational analysis provide a transparent and robust alternative to inverse-variance meta-analytic pooling? GRMA was evaluated via simulation with 2,000 replicates across 25 scenarios against four comparators and benchmarked on 4,572 real Cochrane meta-analyses from the Pairwise70 dataset. The method represents each study in a two-feature space of effect size and log-precision, computing grey relational coefficients with an explicit Tukey bisquare redescending effect guard and bootstrap percentile interval inference. GRMA reduced median absolute bias of the pooled RR by up to 66 percent in four of five outlier scenarios, with bootstrap 95% CI coverage of 0.940. In the Pairwise70 benchmark, GRMA estimates correlated at r equals 0.956 with standard random-effects estimates, increasing to 0.980 at k of at least 10. GRMA offers a transparent companion to standard random-effects models for detecting and down-weighting influential outliers in routine synthesis. However, a limitation is that statistical power under uncontaminated conditions was 13 percentage points lower than HKSJ.",
+  "sentences": [
+    {
+      "role": "Question",
+      "text": "Can grey relational analysis provide a transparent and robust alternative to inverse-variance meta-analytic pooling?"
+    },
+    {
+      "role": "Dataset",
+      "text": "GRMA was evaluated via simulation with 2,000 replicates across 25 scenarios against four comparators and benchmarked on 4,572 real Cochrane meta-analyses from the Pairwise70 dataset."
+    },
+    {
+      "role": "Method",
+      "text": "The method represents each study in a two-feature space of effect size and log-precision, computing grey relational coefficients with an explicit Tukey bisquare redescending effect guard and bootstrap percentile interval inference."
+    },
+    {
+      "role": "Primary result",
+      "text": "GRMA reduced median absolute bias of the pooled RR by up to 66 percent in four of five outlier scenarios, with bootstrap 95% CI coverage of 0.940."
+    },
+    {
+      "role": "Robustness",
+      "text": "In the Pairwise70 benchmark, GRMA estimates correlated at r equals 0.956 with standard random-effects estimates, increasing to 0.980 at k of at least 10."
+    },
+    {
+      "role": "Interpretation",
+      "text": "GRMA offers a transparent companion to standard random-effects models for detecting and down-weighting influential outliers in routine synthesis."
+    },
+    {
+      "role": "Boundary",
+      "text": "However, a limitation is that statistical power under uncontaminated conditions was 13 percentage points lower than HKSJ."
+    }
+  ],
+  "notes": {
+    "app": "GRMA v10.0 (R + Python)",
+    "data": "4,572 Cochrane meta-analyses (Pairwise70), 2,000-rep simulation",
+    "code": "https://github.com/mahmood726-cyber/grma",
+    "doi": "",
+    "version": "10.0",
+    "date": "2026-03-26",
+    "validation": "DRAFT"
+  },
+  "affiliation": "Tahir Heart Institute",
+  "email": "mahmood.ahmad2@nhs.net",
+  "references": [
+    "Borenstein M, Hedges LV, Higgins JPT, Rothstein HR. Introduction to Meta-Analysis. 2nd ed. Wiley; 2021.",
+    "Higgins JPT, Thompson SG, Deeks JJ, Altman DG. Measuring inconsistency in meta-analyses. BMJ. 2003;327(7414):557-560.",
+    "Cochrane Handbook for Systematic Reviews of Interventions. Version 6.4. Cochrane; 2023."
+  ]
+}
