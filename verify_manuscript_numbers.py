@@ -6,8 +6,9 @@ import csv
 import sys
 import io
 
-# Force UTF-8 stdout on Windows
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+# Force UTF-8 stdout on Windows (skip under pytest, which manages its own capture)
+if "pytest" not in sys.modules:
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 
 import os
 BASE = os.path.dirname(os.path.abspath(__file__))
