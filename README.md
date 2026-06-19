@@ -87,4 +87,4 @@ MIT License. See `LICENSE`.
 
 ## Citation
 
-Hassan MU. Grey Relational Meta-Analysis: A Robust Pooling Method with Redescending Effect Guard. PLOS ONE. 2026. [DOI to be added upon publication]
+Kumar N. Grey Relational Meta-Analysis: A Robust Pooling Method with Redescending Effect Guard. Synthesis. 2026.
