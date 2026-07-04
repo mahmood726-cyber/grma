@@ -40,6 +40,38 @@ python generate_figures.py
 python verify_manuscript_numbers.py
 ```
 
+## Command-Line Usage (run GRMA on your own data)
+
+`grma_cli.py` exposes the estimator on the command line so you can pool your own
+effect sizes without writing Python. Input is a CSV with a header row; the
+effect and variance columns are auto-detected (case-insensitive) from common
+aliases (`effect`/`yi`/`y`/`es`/`smd`/`logrr`/`logor` and
+`variance`/`vi`/`v`/`var`), or named explicitly.
+
+```bash
+# Pool your own data (auto-detects effect/variance columns)
+python grma_cli.py mydata.csv --seed 20260213
+
+# Standard errors instead of variances (squared internally)
+python grma_cli.py mydata.csv --se-col se
+
+# Also fit the comparator methods (IV/DL/REML/HK/Huber/t + GRMA-noguard)
+python grma_cli.py mydata.csv --compare
+
+# Reproducible bootstrap, JSON output, write a results CSV
+python grma_cli.py mydata.csv --seed 20260213 --json --out results.csv
+
+# Try it on the embedded BCG or Morris example (no input file needed)
+python grma_cli.py --example bcg --compare
+```
+
+Estimator options: `--zeta`, `--tukey-c`, `--no-guard`. Inference options:
+`--boot`, `--conf`, `--seed`. The CLI validates its input (missing file/columns,
+non-numeric cells, non-positive variances) and exits with code `2` and a clear
+message on error. It calls the same `GRMA.fit` / `bootstrap_ci` /
+`compare_methods` functions as the reproducibility scripts, so results are
+identical to the API.
+
 ## File Structure
 
 ### Core Implementation
@@ -57,6 +89,7 @@ python verify_manuscript_numbers.py
 | `run_pairwise70_benchmark.py` | ~30 min | Pairwise70 Cochrane benchmark (4,572 analyses) |
 | `generate_figures.py` | ~30 sec | Publication figures (Figs 1-5) |
 | `verify_manuscript_numbers.py` | ~5 sec | Checks manuscript claims against CSVs |
+| `grma_cli.py` | ~2 sec | Command-line interface: run GRMA on your own CSV |
 | `cross_validate.py` / `.R` | ~10 sec | R-Python cross-validation |
 | `test_edge_cases.R` | ~10 sec | Edge case tests with assertions |
 
