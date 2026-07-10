@@ -86,7 +86,7 @@ identical to the API.
 | `reproduce_all_v8.py` | ~2 min | Reproduces all Python-side tables |
 | `applied_examples.R` | ~1 min | Five applied examples (BCG, Morris, CD002042) |
 | `run_grma_simulation.R` | ~8-12 h | Full 2000-rep x 25-scenario simulation (R) |
-| `run_pairwise70_benchmark.py` | ~30 min | Pairwise70 Cochrane benchmark (4,572 analyses) |
+| `run_pairwise70_benchmark.py` | ~30 min | Pairwise70 Cochrane benchmark (4,572 analyses). **Requires the external Pairwise70 framework** (the `gwam_utils`, `model_gwam_bayesian`, `simulate_gwam_vs_re` modules) plus `pandas`/`pyreadr`; not self-contained in this capsule. Committed outputs are under `pairwise70_benchmark_grma/`. |
 | `generate_figures.py` | ~30 sec | Publication figures (Figs 1-5) |
 | `verify_manuscript_numbers.py` | ~5 sec | Checks manuscript claims against CSVs |
 | `grma_cli.py` | ~2 sec | Command-line interface: run GRMA on your own CSV |

@@ -506,15 +506,35 @@ def _hk_reml(yi, vi):
     v = np.maximum(np.asarray(vi, dtype=np.float64), 1e-15)
     k = len(y)
 
+    # k == 1: no between/within decomposition is possible (k-1 == 0 and the
+    # DL/PM path divides by C == 0). Fall back to the single-study Wald
+    # interval instead of returning NaN. metafor::rma handles k == 1 similarly
+    # (single estimate with its own sampling SE).
+    if k == 1:
+        se = float(np.sqrt(v[0]))
+        z = stats.norm.ppf(0.975)
+        return {
+            "method": "single_study",
+            "estimate": float(y[0]),
+            "se": se,
+            "ci_lo": float(y[0] - z * se),
+            "ci_hi": float(y[0] + z * se),
+            "tau2": 0.0,
+        }
+
     reml = _reml_random_effects(y, v)
     tau2 = reml.get("tau2", 0.0)
     est = reml["estimate"]
 
     w = 1.0 / (v + tau2)
-    # HK adjustment factor (guard: q_hk >= se_wald^2 to avoid zero SE)
+    # Knapp-Hartung (KNHA) SE, matching metafor::rma(test="knha") used by
+    # grma_meta.R for the k < 3 fallback: se_hk = sqrt(q_hk) * se_wald where
+    # q_hk is the DIMENSIONLESS scaling factor sum(w*(y-est)^2)/(k-1). Do NOT
+    # floor q_hk against the (variance-scaled) se_wald**2 — that mixes units
+    # and diverges from metafor by up to ~50x for imprecise studies. Only a
+    # tiny guard against an exact-zero q_hk (all effects identical).
     q_hk = np.sum(w * (y - est) ** 2) / (k - 1)
-    se_wald = float(np.sqrt(1.0 / np.sum(w)))
-    se_hk = float(np.sqrt(max(q_hk, se_wald**2) / np.sum(w)))
+    se_hk = float(np.sqrt(max(q_hk, 1e-30) / np.sum(w)))
 
     df = max(1, k - 1)
     t_crit = stats.t.ppf(0.975, df)
